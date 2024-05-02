@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+
+</head>
+
+<body>
+    <div class="container" style="top: 140px;">
+        <div id="login-form" style="top: 200px;">
+            <i class="fa-solid fa-user fa-4x" style="color: #007bff;position: relative; left:171px;"></i>
+            <h2 style="text-align: center;"  >Login</h2>
+            <form id="login-form" onsubmit="login(event)">
+                <div id="valid" style="display: none;">
+                    <span style="color: red;">Plz correct the validation errors first.</span>
+                </div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="Enter your name" required onkeyup="fuValidLog()"><span
+                    id="NameLogin"></span>
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Enter your password" required
+                    onkeyup="fupasValidLog()"><span id="showLogin"></span><br>
+                <input id="but2" class="button" type="submit" value="Login">
+                <!-- onclick="login(e)" -->
+            </form>
+            <span style="color:#007bff ;">Dont have account? </span><a href="register.html">Register</a>
+        </div>
+
+        <script src="JS/valid.js"></script>
+        <script src="bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

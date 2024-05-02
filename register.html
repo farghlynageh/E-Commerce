@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+
+<body>
+    <div class="container" class="regest">
+        <div id="register-form">
+            <i class="fa-solid fa-user fa-4x" style="color: #007bff;position: relative; left:171px;"></i>
+            <h2 style="text-align: center;">Register</h2>
+            <form id="register-form" onsubmit="register(event)">
+                <div id="valid_reg" style="display: none;">
+                    <span style="color: red;">Plz correct the validation errors first.</span>
+                </div>
+                <label for="email-reg">Email:</label>
+                <input type="email" id="email-reg" onkeyup="validEmail()" placeholder="Enter your email" required><span
+                    id="Email"></span>
+                <label for="username-reg">Username:</label>
+                <input type="text" id="username-reg" placeholder="Enter your name" onkeyup="validName(this)" required>
+                <span id="Name"></span>
+                <label for="password-reg">Password:</label>
+                <input type="password" id="password-reg" placeholder="Enter your password" required>
+                <label for="password-reg2"> confirm Password:</label>
+                <input type="password" id="password-reg2" placeholder="Enter your password" required
+                    onkeyup="checkPassRegst()"><span id="showMs"></span><br>
+                <input id="but1" class="button" type="submit" value="Register">
+            </form>
+            <span style="color:#007bff ;">have account? </span><a href="login.html">login</a>
+        </div>
+
+    </div>
+    <script src="JS/valid.js"></script>
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

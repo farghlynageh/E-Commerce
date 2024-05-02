@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>add cart</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/admin.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.css">
+  <style></style>
+</head>
+
+<body>
+
+  <!-- this is star Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand text-primary fw-bold" href="#">
+          <img src="./images/wallpaperflare.com_wallpaper.jpg" width="40px" height="40px" style="border-radius: 50%;">
+          FAB-SHOP
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <!-- <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home <i class="fas fa-house-user"></i></a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="./categoryuser.html">Category <i class="fas fa-layer-group"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./productuser.html">Product <i class="fab fa-product-hunt"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./wishlist.html">Wishlist <i class="fas fa-heart"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./addcart.html">Cart <i class="fas fa-cart-shopping"></i></a>
+            </li>
+          </ul>
+  
+          <form class="d-flex m-1">
+            <input onkeyup="searchdate(this.value)" class="form-control me-2" type="search" placeholder="Search"
+              aria-label="Search" id="search">
+            <i class="fas fa-search m-3" onmouseover="getsearch(this.id)" id="searchName"></i>
+          </form>
+  
+          <div class="d-flex">
+            <a href="./login.html"><button class="btn btn-outline-primary m-1">Logout</button></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <br><br><br><br>
+  <!-- this is end Navbar -->
+  <h2 style="text-align: center; color: #007bff;">Cart</h2>
+  <div id="cartcontianer">
+
+    <!-- <div class="addcart-container">
+    <div class="addcart-item">
+      <img src="images/wallpaperflare.com_wallpaper.jpg" alt="Product 1">
+      <div class="addcart-item-details">
+        <h3>Product 1</h3>
+        <p>Description of Product 1</p>
+        <span style="color: #007bff;">$21</span>
+      </div>
+      <button class="but-2" style="background-color: red;">Remove</button>
+      <button class="but-2">Buy</button>
+    </div>
+  </div>
+
+
+  <div class="addcart-container">
+    <div class="addcart-item">
+      <img src="images/wallpaperflare.com_wallpaper.jpg" alt="Product 1">
+      <div class="addcart-item-details">
+        <h3>Product 1</h3>
+        <p>Description of Product 1.</p>
+        <span style="color: #007bff;">$50</span>
+      </div>
+      <button class="but-2" style="background-color: red;">Remove</button>
+      <button class="but-2">Buy</button>
+    </div> -->
+    <!-- </div> -->
+
+  </div>
+  <div class="text-center m-5 fa-1x"> <button class="but-2 align-items-end fw-bold " onclick="buy()">Buy</button></div>
+
+
+  <!-- this is star footer -->
+  <!-- Footer -->
+  <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="p-5" style="background-color: rgb(53, 52, 52); color: white;">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3" style="color: #007bff;"></i>E-commerce
+            </h6>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi,
+              doloribus laborum dignissimos aliquam
+              voluptatum vel beatae blanditiis
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              used in the project
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">HTML</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">CSS</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">JS</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">BOOTSTRAP</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+
+            <h6 class="text-uppercase fw-bold mb-4">
+              social networks
+            </h6>
+            <p>
+              <a href="https://www.facebook.com/profile.php?id=100008375294545" target="_blank" class="me-4 text-reset">
+                <i class="fab fa-facebook-f"></i>
+                Bassan Serag
+              </a>
+            </p>
+            <p>
+              <a href="https://www.instagram.com/bassam_serag_99?igsh=ZHF1bG1lb3J4MnN3" target="_blank"
+                class="me-4 text-reset">
+                <i class="fab fa-instagram"></i>
+                bassam_seag_99
+              </a>
+            </p>
+
+            <p>
+              <a href="https://www.linkedin.com/in/bassam-serag-756292254/" target="_blank" class="me-4 text-reset">
+                <i class="fab fa-linkedin"></i>
+                Bassan Serag
+              </a>
+
+            </p>
+            <p>
+              <a href="https://github.com/Bassam-Serag" target="_blank" class="me-4 text-reset">
+                <i class="fab fa-github"></i>
+                Bassan-Serag
+              </a>
+            </p>
+
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3"></i> Assiut - Elbadari</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              bassamserag055@gmail.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i>+ 01552546867</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2023 Copyright:Bassam&Farghaly
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  <!-- this is end footer -->
+  <script src="JS/addcart.js"></script>
+  <script src="bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

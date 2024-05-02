@@ -1,0 +1,318 @@
+   body {
+       font-family: 'Cairo', sans-serif;
+       background-color: #f4f4f4;
+       margin: 0;
+       padding: 0;
+   }
+
+
+   button {
+       padding: 10px 20px;
+       background-color: #007bff;
+       color: #fff;
+       border: none;
+       cursor: pointer;
+       font-size: 16px;
+   }
+
+   /*home*/
+h5 ,.somepar{
+    color: #ffffff !important;
+}
+   /* star add form cat & card */
+
+
+
+   #modal {
+       /* category */
+       display: none;
+       position: fixed;
+       top: 170px;
+       height: auto;
+       overflow-block: auto;
+       transform: translate(270%, -14%);
+       padding: 10px;
+       margin: 10px;
+       background: #fff;
+       box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+       border-radius: 5px;
+       width: 330px;
+       max-width: 100%;
+       text-align: center;
+       z-index: 1;
+   }
+
+
+   .modal {
+       display: none;
+       position: relative;
+       overflow-block: auto;
+       left: 220px;
+       padding: 5px;
+       background: #fff;
+       box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+       border-radius: 5px;
+       width: 300px;
+       max-width: 100%;
+       text-align: center;
+   }
+
+   form .form-categ {
+       margin-top: -30px;
+       padding: 20px;
+       bottom:  400px !important;
+   }
+
+   label {
+       display: block;
+       margin-bottom: 5px;
+       color: #555;
+   }
+
+   input,
+   textarea {
+       width: 100%;
+       padding: 5px;
+       margin-bottom: 10px;
+       box-sizing: border-box;
+       border: 1px solid #a09d9d;
+       border-radius: 4px;
+       font-size: 14px;
+   }
+
+   select {
+       width: 100%;
+       padding: 10px;
+       margin-bottom: 15px;
+       box-sizing: border-box;
+       border: 1px solid #ccc;
+       border-radius: 4px;
+       font-size: 14px;
+       text-align: center;
+   }
+
+   button.modal-close {
+       background-color: #ccc;
+       color: #333;
+   }
+
+   button.modal-close:hover {
+       background-color: #bbb;
+   }
+
+   /* end add form cat & card */
+
+
+
+   /* start card for mobile, camera, labtop */
+
+   .card-container {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-around;
+   }
+
+   .card {
+       text-align: center;
+       width: 466px;
+      
+       border: 1px solid #ddd;
+       border-radius: 8px;
+       margin: 10px;
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+       background-color: #fff;
+       overflow: hidden;
+       /* display: inline-block; */
+
+   }
+
+   .card img {
+       width: 100%;
+       height: 350px;
+       border-bottom: 1px solid #ddd;
+   }
+
+
+   .card h3,
+   .card p {
+       margin: 10px 0;
+   }
+
+   .price {
+       color: #007bff;
+       font-weight: bold;
+   }
+
+   .admin-buttons {
+       position: absolute;
+       top: 5px;
+       right: 1px;
+       text-align: center;
+       position: relative;
+
+   }
+
+   .admin-buttons button {
+       padding: 8px;
+       margin-right: 5px;
+       background-color: #333;
+       color: #fff;
+       border: none;
+       border-radius: 4px;
+   }
+
+   .Buy-btn {
+       display: block;
+       width: 100%;
+       padding: 10px;
+       background-color: #007bff;
+       color: #fff;
+       text-align: center;
+       text-decoration: none;
+       border: none;
+       border-radius: 5px;
+   }
+
+
+   .Buy-btn:hover {
+       background-color: #fff;
+       border: 1px solid #007bff;
+       color: #007bff;
+   }
+   .but-categ{
+    position: relative;
+    bottom: 520px;
+    left: 210px;
+    border-radius: 20px;
+    height: 30px;
+    background-color: transparent!important;
+    
+   }
+   /* end carddd */
+
+
+   /* start category */
+
+   .category {
+       margin-bottom: 20px;
+       text-align: center;
+   }
+
+   .cat-card {
+       width: 500px;
+       border: 1px solid #ddd;
+       border-radius: 8px;
+       margin: 10px;
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+       background-color: #fff;
+       overflow: hidden;
+       display: inline-block;
+       transition: transform 0.4s ease-in-out;
+   }
+
+   .cat-card img {
+       width: 100%;
+       height: 300px;
+       border-bottom: 1px solid #ddd;
+   }
+
+   .card-content {
+       padding: 10px;
+   }
+
+   .cat-card p {
+       margin: 10px 0;
+       text-align: center;
+   }
+
+   .debart {
+       color: #007bff;
+       font-weight: bold;
+   }
+
+   .cat-card:hover {
+       transform: translateY(-10px);
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+   }
+
+
+
+   /* end category */
+
+
+   /* star wishlist */
+   .wishlist-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+
+  .wishlist-item {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .wishlist-item img {
+    max-width: 100px;
+    max-height: 100px;
+    margin-right: 10px;
+  }
+
+  .wishlist-item-details {
+    flex: 1;
+  }
+  .but-2{
+    border-radius: 8px;
+    margin: 5px;
+  }
+  
+  /* end wishlist */
+
+
+   /* star addcart   */
+   .addcart-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    background-color: #e3f2fd;
+    color: 000;
+  }
+
+  .addcart-item {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .addcart-item img {
+    max-width: 100px;
+    max-height: 100px;
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+
+  .addcart-item-details {
+    flex: 1;
+  }
+  .but-2{
+    border-radius: 12px;
+    margin: 5px;
+  }
+  
+  /* end addcart */
+
+
+  
